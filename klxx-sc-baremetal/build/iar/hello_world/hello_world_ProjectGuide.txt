@@ -1,0 +1,62 @@
+*******************************************************************************************
+* Project Name:    hello_world
+*
+* Freescale Semiconductor
+*
+* Sample Code Only
+*
+* NOTE: This code comes with no guarantees, expressed or implied, and is meant to
+* only show examples to get you started with your projects.
+*******************************************************************************************
+
+DESCRIPTION:
+
+	Demonstrates basic project outline and UART communication for FRDM KL26Z.
+
+TESTED ON:
+
+	- FRDM KL26Z
+
+	- IAR EWARM 6.50.6
+
+	- CodeWarrior 10.4
+
+	- Keil uVision 4.71.2.0
+
+	- PE Micro DEBUG-APP_Pemicro_v106.SDA
+
+	- Memory Targets:
+
+		FLASH_128KB
+		FLASH_64KB
+		FLASH_32KB
+
+REQUIREMENTS:
+
+	- FRDM KL26Z development board running PEmicro Debug Application (See OPENSDAUG.pdf for instructions to install debug app.)
+
+	- Terminal application with the ability to send raw HEX data. i.e., Hercules
+
+	- Mini USB cable for OpenSDA debugging & powering the FRDM KL26Z 
+
+SETUP:
+
+	Terminal:
+		- Open up Device Manager to check COM port name of 'OpenSDA - CDC Serial port'. e.g., COM1, COM2, etc..
+		- Baudrate: 	115200 (Check 'freedom.h' macro 'TERMINAL_BAUD' for baudrate setting.)
+		- Data size: 	8 bits
+		- Parity:	none
+		- Handshake:	OFF	(Called 'Flow control' in PuTTY, set to 'None'.)
+
+BEHAVIOR:
+
+	A message "*** Running the hello_world project ***" should appear in the terminal. Following that message the user can send
+	characters to the board, and they will be echoed back to the terminal.		
+
+ADDITIONAL NOTES:
+
+	IAR: 	Make sure IAR and FREEDOM are defined in the preprocessor.
+
+	Keil: 	Make sure KEIL, FREEDOM and CMSIS are defined in the preprocessor.
+
+	CW: 	Make sure CW and FREEDOM are defined in the preprocessor.			
